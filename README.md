@@ -1,4 +1,4 @@
-# @myriad-ui/core
+# @race-conditioned/myriad-ui
 
 A config-object-driven, Tailwind v4-first React component library built on [React Aria Components](https://react-spectrum.adobe.com/react-aria/react-aria-components.html).
 
@@ -11,8 +11,8 @@ Every component is fully accessible out of the box. Styling is entirely controll
 Components accept a `config` prop that controls every class name, colour, and behaviour. You build a theme once with `createTheme()`, then pass the relevant config slice to each component.
 
 ```tsx
-import { createTheme } from "@myriad-ui/core";
-import { Button } from "@myriad-ui/core/button";
+import { createTheme } from "@race-conditioned/myriad-ui";
+import { Button } from "@race-conditioned/myriad-ui/button";
 
 const theme = createTheme({
   components: {
@@ -43,9 +43,9 @@ const theme = createTheme({
 ## Installation
 
 ```bash
-npm install @myriad-ui/core react-aria-components
+npm install @race-conditioned/myriad-ui react-aria-components
 # or
-bun add @myriad-ui/core react-aria-components
+bun add @race-conditioned/myriad-ui react-aria-components
 ```
 
 Requires React 19+ and Tailwind v4.
@@ -56,24 +56,24 @@ Requires React 19+ and Tailwind v4.
 
 | Component | Import |
 |---|---|
-| Button | `@myriad-ui/core/button` |
-| GlowBorderButton | `@myriad-ui/core/glow-border-button` |
-| RollingText | `@myriad-ui/core/rolling-text` |
-| TextField | `@myriad-ui/core/text-field` |
-| TextArea | `@myriad-ui/core/text-area` |
-| NumberField | `@myriad-ui/core/number-field` |
-| SearchField | `@myriad-ui/core/search-field` |
-| SelectField | `@myriad-ui/core/select-field` |
-| ComboBox | `@myriad-ui/core/combo-box` |
-| Checkbox + CheckboxGroup | `@myriad-ui/core/checkbox` |
-| RadioGroup + Radio | `@myriad-ui/core/radio-group` |
-| Switch | `@myriad-ui/core/switch` |
-| Slider | `@myriad-ui/core/slider` |
-| Tooltip | `@myriad-ui/core/tooltip` |
-| Dialog | `@myriad-ui/core/dialog` |
-| Popover | `@myriad-ui/core/popover` |
+| Button | `@race-conditioned/myriad-ui/button` |
+| GlowBorderButton | `@race-conditioned/myriad-ui/glow-border-button` |
+| RollingText | `@race-conditioned/myriad-ui/rolling-text` |
+| TextField | `@race-conditioned/myriad-ui/text-field` |
+| TextArea | `@race-conditioned/myriad-ui/text-area` |
+| NumberField | `@race-conditioned/myriad-ui/number-field` |
+| SearchField | `@race-conditioned/myriad-ui/search-field` |
+| SelectField | `@race-conditioned/myriad-ui/select-field` |
+| ComboBox | `@race-conditioned/myriad-ui/combo-box` |
+| Checkbox + CheckboxGroup | `@race-conditioned/myriad-ui/checkbox` |
+| RadioGroup + Radio | `@race-conditioned/myriad-ui/radio-group` |
+| Switch | `@race-conditioned/myriad-ui/switch` |
+| Slider | `@race-conditioned/myriad-ui/slider` |
+| Tooltip | `@race-conditioned/myriad-ui/tooltip` |
+| Dialog | `@race-conditioned/myriad-ui/dialog` |
+| Popover | `@race-conditioned/myriad-ui/popover` |
 
-Everything is also re-exported from the root `@myriad-ui/core` for convenience.
+Everything is also re-exported from the root `@race-conditioned/myriad-ui` for convenience.
 
 ---
 
@@ -133,7 +133,7 @@ Add a `@source` directive so Tailwind scans the package for class names:
 ```css
 /* your main CSS file */
 @import "tailwindcss";
-@source "../node_modules/@myriad-ui/core/dist/**/*.js";
+@source "../node_modules/@race-conditioned/myriad-ui/dist/**/*.js";
 ```
 
 ---
@@ -141,7 +141,7 @@ Add a `@source` directive so Tailwind scans the package for class names:
 ## Theme system
 
 ```ts
-import { createTheme, defaultTheme } from "@myriad-ui/core";
+import { createTheme, defaultTheme } from "@race-conditioned/myriad-ui";
 
 // Merge overrides on top of defaults
 const theme = createTheme({ components: { ... } });
