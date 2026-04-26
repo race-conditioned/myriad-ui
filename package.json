@@ -1,0 +1,93 @@
+{
+  "name": "@myriad-ui/core",
+  "version": "0.0.1",
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./theme": {
+      "import": "./dist/theme.js",
+      "types": "./dist/theme.d.ts"
+    },
+    "./button": {
+      "import": "./dist/button.js",
+      "types": "./dist/button.d.ts"
+    },
+    "./checkbox": {
+      "import": "./dist/checkbox.js",
+      "types": "./dist/checkbox.d.ts"
+    },
+    "./glow-border-button": {
+      "import": "./dist/glow-border-button.js",
+      "types": "./dist/glow-border-button.d.ts"
+    },
+    "./rolling-text": {
+      "import": "./dist/rolling-text.js",
+      "types": "./dist/rolling-text.d.ts"
+    },
+    "./tooltip": {
+      "import": "./dist/tooltip.js",
+      "types": "./dist/tooltip.d.ts"
+    },
+    "./text-field": {
+      "import": "./dist/text-field.js",
+      "types": "./dist/text-field.d.ts"
+    },
+    "./text-area": {
+      "import": "./dist/text-area.js",
+      "types": "./dist/text-area.d.ts"
+    },
+    "./number-field": {
+      "import": "./dist/number-field.js",
+      "types": "./dist/number-field.d.ts"
+    },
+    "./combo-box": {
+      "import": "./dist/combo-box.js",
+      "types": "./dist/combo-box.d.ts"
+    },
+    "./search-field": {
+      "import": "./dist/search-field.js",
+      "types": "./dist/search-field.d.ts"
+    },
+    "./select-field": {
+      "import": "./dist/select-field.js",
+      "types": "./dist/select-field.d.ts"
+    },
+    "./radio-group": {
+      "import": "./dist/radio-group.js",
+      "types": "./dist/radio-group.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "storybook": "storybook dev -p 6008",
+    "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react-aria-components": "^1.7.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.6.12",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "storybook": "^8.6.12",
+    "tailwindcss": "^4.1.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3"
+  }
+}

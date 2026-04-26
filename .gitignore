@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+.DS_Store
+storybook-static/
+
+# Internal brand assets — not for public repo
+planning/
+*.zip
+*.tokens.json
+Semantic\ Tokens/
+Semantic Tokens/
